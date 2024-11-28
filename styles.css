@@ -1,0 +1,141 @@
+/* --- Estilos básicos --- */
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;  /* Fonte clássica */
+  background-color: #121212;  /* Fundo escuro elegante */
+  color: #fff;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1); /* Fundo translúcido */
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* --- Estilos de títulos --- */
+h1 {
+  font-family: 'Cursive', sans-serif;
+  font-size: 1vw;
+  color: #f4a300;  /* Cor dourada */
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+/* --- Seção de Fotos --- */
+.photo-section {
+  margin: 50px 0;
+}
+
+.photo-section img {
+  width: 20%;  /* Reduzido para 20% */
+  max-height: 500px;  /* Altura máxima */
+  object-fit: cover;
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.photo-section img:hover {
+  transform: scale(1.05);  /* Zoom suave */
+}
+
+/* --- Seção de Texto --- */
+.text-section {
+  margin-top: 30px;
+  text-align: justify;
+  font-size: 0,5em;
+  color: #dcdcdc;
+  line-height: 1.8;
+  margin: 20px;
+  
+}
+
+.text-section p {
+  margin-bottom: 20px;
+}
+
+/* --- Seção do Timer --- */
+.timer-section {
+  margin-top: 30px;
+}
+
+.timer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.timer div {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-size: 1.5em;
+  color: #f4a300;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease-in-out;
+}
+
+.timer div:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* --- Seção de Música --- */
+
+
+
+/* --- Swiper.js --- */
+.swiper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.swiper-slide img:hover {
+  transform: scale(1.05);
+}
+
+/* --- Responsividade --- */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .photo-section img {
+    width: 90%;  /* Reduz a largura para caber em telas menores */
+  }
+
+  .text-section {
+    font-size: 1em;
+  }
+
+  .timer div {
+    font-size: 1.2em;
+    padding: 10px 15px;
+  }
+}
